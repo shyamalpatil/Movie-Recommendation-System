@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #abd8f693;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+h1{
+  margin:0 auto 40px;
+  width:100%;
+  text-align: center;
+}
+.navbar {
+  position:sticky;
+  top:0;
+  background-color: #25316dfa;
+  color: white;
+  font-size: x-large;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  z-index: 1;
+}
+.navbar>input{
+  width:250px;
+  height:25px;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+.navbar-inside-div {
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hindi-movies,
+.hollywood-movies,
+.top10-movies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 4%;
+  padding-top: 100px;
+}
+
+/* movies cards realted css */
+.movie-cards {
+  width: 280px;
+  height: 460px;
+  background-color: rgb(124, 168, 213);
+  display: inline-block;
+  margin: 25px 10px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.movie-cards:hover {
+  position: relative;
+  animation-name: pop-up-animation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.movies-cards-image > img {
+  width: 279px;
+  height: 408px;
+  border-radius: 15px 15px ;
+}
+.movies-cards-title{
+  margin:5px
+  
+}
+
+
+
+/* animation */
+@keyframes pop-up-animation {
+  0% {
+    top: 0;
+  }
+  50% {
+    bottom: 5px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+
+/* all .hollywood styles */
+
+.detailed-movie-info{
+  color: black;
+ /* background-color: rgb(190, 252, 96); */
+ width: 100%;
+ max-height: fit-content;
+ display: flex;
+ margin:2px auto 0;
+}
+.detailed-movie-info-image>img{
+  width:400px;
+  height:584px;
+  margin:0 15px 0 0
+}
+.detailed-movie-info-all{
+  padding: 20px;
+}
+.detailed-move-info-all-data>*{
+  display: inline-block;
+  margin: 20px 0 15px 0;
+  font-size: larger;
+  letter-spacing: 1.2px;
+}
+.detailed-move-info-all-data>a{
+  color: black;
+}
+.detailed-move-info-all-data>a:hover{
+  font-size: x-large;
+  color:blue
+}
